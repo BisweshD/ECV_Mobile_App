@@ -1,0 +1,13 @@
+{
+  "name": "ionic-react-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react",
+  "proxy": [
+    {
+      "path": "/api",
+      "proxyUrl": "http://localhost:9000"
+    }
+  ]
+}

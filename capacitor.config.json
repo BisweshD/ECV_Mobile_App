@@ -1,0 +1,12 @@
+{
+  "appId": "com.yourapp.id",
+  "appName": "YourAppName",
+  "webDir": "build",
+  "bundledWebRuntime": false,
+  "plugins": {
+    "CapacitorSQLite": {
+      "androidIsEncryption": false,
+      "iosDatabaseLocation": "Library/CapacitorDatabase"
+    }
+  }
+}
