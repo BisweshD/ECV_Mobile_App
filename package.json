@@ -57,6 +57,7 @@
     "workbox-streams": "^5.1.4"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@capacitor/cli": "^6.1.0",
     "@types/lodash.debounce": "^4.0.9",
     "@types/plotly.js": "^2.29.5",
@@ -69,7 +70,7 @@
   "scripts": {
     "start": "concurrently \"npm run server --prefix .\" \"npm run client --prefix .\"",
     "server": "cd proxy-server && npm start",
-    "client": "react-scripts start",
+    "client": "HTTPS=true react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --transformIgnorePatterns 'node_modules/(?!(@ionic/react|@ionic/react-router|@ionic/core|@stencil/core|ionicons)/)'",
     "eject": "react-scripts eject",
